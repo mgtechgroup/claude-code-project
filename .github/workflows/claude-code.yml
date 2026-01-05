@@ -1,0 +1,19 @@
+name: Claude Code Action
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  claude-code:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Claude Code Action Official
+        uses: anthropics/claude-code-action@v1

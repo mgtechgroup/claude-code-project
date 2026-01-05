@@ -1,0 +1,24 @@
+# Development tools
+.rustup/
+.cargo/
+.nvm/
+.pyenv/
+.npm/
+.local/
+
+# Claude Code internal files
+.claude/
+
+# System files
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.cache/
+.config/
+.motd_shown
+.update-notifier-last-checked
+
+# Keep only the project files
+!.github/
+!README.md

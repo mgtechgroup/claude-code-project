@@ -18,6 +18,17 @@
 .config/
 .motd_shown
 .update-notifier-last-checked
+.gitconfig
+.sudo_as_admin_successful
+.ssh/
+
+# Claude configuration
+.claude.json
+.claude.json.backup
+
+# Package managers
+package-lock.json
+node_modules/
 
 # Keep only the project files
 !.github/

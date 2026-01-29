@@ -1,35 +1,106 @@
-# Development tools
+# ========================================
+# OPTIMIZED .gitignore - Token Conscious
+# ========================================
+
+# Development Environments & Tools
+# ---------------------------------
+.avm/
+.bashrc.d/
+.dart-tool/
+.docker/
+.dotnet/
+.foundry/
+.landscape/
+.oh-my-zsh/
+.pub-cache/
+.vscode-server/
 .rustup/
 .cargo/
 .nvm/
 .pyenv/
 .npm/
 .local/
+.cache/
+.config/
 
-# Claude Code internal files
+# Claude Code
+# -----------
 .claude/
+.claude.json
+.claude.json.backup
+.claude-settings*.json
 
-# System files
+# Cloned Projects
+# ---------------
+projects/
+
+# Deployment Logs
+# ---------------
+deployment-*.log
+
+# System Files
+# ------------
 .bash_history
 .bash_logout
 .bashrc
 .profile
-.cache/
-.config/
 .motd_shown
 .update-notifier-last-checked
 .gitconfig
 .sudo_as_admin_successful
+.wget-hsts
+.zshrc
 .ssh/
 
-# Claude configuration
-.claude.json
-.claude.json.backup
-
-# Package managers
+# Package Managers
+# ----------------
 package-lock.json
 node_modules/
+vendor/
+composer.json
+*.lock
 
-# Keep only the project files
-!.github/
+# Temporary & Build Artifacts
+# ----------------------------
+*.tar.gz
+*.log
+*.pid
+upgrade_output.log
+system_upgrade_logs/
+
+# Development Projects
+# --------------------
+awesome-claude-skills/
+claude-code-skill-factory/
+flutter/
+blockchain-wallets/
+smart-contracts/
+nvidia-nim/
+nvidia-chat-setup.sh
+
+# Scripts (Keep executable scripts)
+# ----------------------------------
+# Scripts are tracked, but logs/outputs are not
+
+# Documentation (Keep consolidated docs)
+# --------------------------------------
+# Main docs in docs/ are tracked
+# Old scattered docs are ignored
+CLAUDE_OPTIMIZATION_SUMMARY.txt
+INSTALL_KEYS_ON_REMOTE.txt
+
+# Port & SSL Systems (Keep config, ignore generated)
+# ---------------------------------------------------
+port-scripts/
+ssl-scripts/
+
+# Keep Important Files
+# ---------------------
 !README.md
+!QUICK_START.md
+!.github/
+!.gitignore_global
+!docs/
+!master-startup.sh
+!verify-system.sh
+!claude-profile-manager.sh

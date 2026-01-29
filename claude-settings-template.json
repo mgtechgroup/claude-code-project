@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.anthropic.com/claude-code/settings-schema.json",
+  "defaultMode": "acceptEdits",
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "mode": "custom",
+    "allow": [
+      "WebSearch",
+      "Bash(npm *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(ls *)",
+      "Bash(pwd *)",
+      "Bash(cat *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(sudo *)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Bash(rm -rf /*)"
+    ]
+  }
+}
